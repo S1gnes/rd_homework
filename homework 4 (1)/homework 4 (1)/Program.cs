@@ -7,17 +7,14 @@ for (int i = 0; i < numbers.Length; i++)
 
 Console.WriteLine("Your number:");
 int searchNumber = int.Parse(Console.ReadLine());
-int position = Array.IndexOf(numbers, searchNumber) + 1;
+int position = Array.IndexOf(numbers, searchNumber);
 int x = 0;
 
-foreach (int item in numbers)
+if (position != -1)
 {
-    if (item == searchNumber)
-        Console.WriteLine($"Number found at position {position}");
-    else
-    {
-        x++;
-        if (x == 5)
-            Console.WriteLine("The number {0} was not found in the array.", searchNumber);
-    }
+    Console.WriteLine($"Number found at position {position}");
+}
+else 
+{
+    Console.WriteLine("The number {0} was not found in the array.", searchNumber);
 }
