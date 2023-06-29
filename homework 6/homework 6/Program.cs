@@ -1,7 +1,9 @@
-﻿using ConsoleApp3;
+﻿
+using ConsoleApp3;
+
 PhoneBook phoneBook = new PhoneBook();
 while (true)
-{   
+{
     Console.WriteLine("1. Find person");
     Console.WriteLine("2. Add person");
     Console.WriteLine("3. Phone Book");
@@ -44,7 +46,6 @@ while (true)
         case 4:
             return;
 
-       
+
     }
 }
-
