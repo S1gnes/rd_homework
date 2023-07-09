@@ -8,6 +8,15 @@ internal class Program
         ourCar.getSpeed();
         ourCar.brake();
         ourCar.getSpeed();
+        IRadio radio = (IRadio)ourCar;
+        radio.TurnOn();
+        radio.ChangeStation("FM 98.7");
+        radio.ChangeVolume(10);
+        radio.TurnOff();
+        ISeats seats = (ISeats)ourCar;
+        seats.AdjustPosition();
+        seats.HeatOn();
+        seats.HeatOff();
     }
     private static void Main(string[] args)
     {
