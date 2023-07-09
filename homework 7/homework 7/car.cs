@@ -68,7 +68,7 @@ namespace homework_7
         public override void accelerate()
         {
             speed = speed + acceleratespeed;
-        }
+        }       
     }
 }   
 

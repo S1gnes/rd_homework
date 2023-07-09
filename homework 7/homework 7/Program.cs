@@ -1,6 +1,14 @@
 ﻿using homework_7;
 internal class Program
 {
+     static void carfunction(car ourCar)
+    {
+        ourCar.getSpeed();
+        ourCar.accelerate();
+        ourCar.getSpeed();
+        ourCar.brake();
+        ourCar.getSpeed();
+    }
     private static void Main(string[] args)
     {
         Console.WriteLine("Choose your car:");
@@ -13,27 +21,15 @@ internal class Program
         {
             case 1:
                 ourCar = new toyota();
-                ourCar.getSpeed();
-                ourCar.accelerate();
-                ourCar.getSpeed();
-                ourCar.brake();
-                ourCar.getSpeed();
+                carfunction(ourCar);
                 break;
             case 2:
                 ourCar = new daewoo();
-                ourCar.getSpeed();
-                ourCar.accelerate();
-                ourCar.getSpeed();
-                ourCar.brake();
-                ourCar.getSpeed();
+                carfunction(ourCar);
                 break;
             case 3:
                 ourCar = new ford();
-                ourCar.getSpeed();
-                ourCar.accelerate();
-                ourCar.getSpeed();
-                ourCar.brake();
-                ourCar.getSpeed();
+                carfunction(ourCar);
                 break;
             default:
                 Console.WriteLine("Invalid input");
