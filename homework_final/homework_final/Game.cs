@@ -55,7 +55,7 @@ namespace homework_final
 
             if (playerScore > 21)
             {
-                return "Перебор";
+                return "Loose :(";
             }
             else if (playerScore == 21)
             {
@@ -63,17 +63,17 @@ namespace homework_final
             }
             else if (playerScore >= 17)
             {
-                return "Стоять";
+                return "Stop";
             }
             else if (playerScore >= 12 && playerScore <= 16)
             {
                 if (dealerScore >= 7)
                 {
-                    return "Стоять";
+                    return "Stop";
                 }
                 else
                 {
-                    return "Взять еще карту";
+                    return "Take";
                 }
             }
             else if (playerScore >= 9 && playerScore <= 11)
@@ -82,7 +82,7 @@ namespace homework_final
             }
             else
             {
-                return "Взять еще карту";
+                return "Take";
             }
         }
 
