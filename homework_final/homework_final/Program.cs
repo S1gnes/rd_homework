@@ -92,7 +92,7 @@ class Program
 
                                 await BotClient.SendTextMessageAsync(chatId: chatId, text: bestMove);
 
-                                if (bestMove == "Взять еще карту")
+                                if (bestMove == "Take")
                                 {
                                     Console.WriteLine("TAKE");
                                 }
